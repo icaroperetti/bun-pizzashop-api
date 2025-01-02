@@ -8,7 +8,7 @@ import { eq } from 'drizzle-orm'
 // TODO: Fix setCookie error
 export const authenticateFromLink = new Elysia().use(auth).get(
   '/auth-links/authenticate',
-  async ({ query, jwt, setCookie, set }) => {
+  async ({ query, jwt, cookie: { auth }, set }) => {
     const { code, redirect } = query
     const authLinkFromCode = await db.query.authLinks.findFirst({
       where(fields, { eq }) {
@@ -36,11 +36,9 @@ export const authenticateFromLink = new Elysia().use(auth).get(
       restauranteId: managedRestaurante?.id,
     })
 
-    setCookie('auth', token, {
-      httpOnly: true,
-      maxAge: 60 * 60 * 24 * 7, // 7 days
-      path: '/',
-    })
+    auth.httpOnly = true
+    auth.maxAge = 60 * 60 * 24 * 7
+    auth.value = token
 
     await db.delete(authLinks).where(eq(authLinks.code, code))
     set.redirect = redirect
