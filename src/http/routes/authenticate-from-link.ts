@@ -5,7 +5,6 @@ import dayjs from 'dayjs'
 import { authLinks } from '../../db/schema'
 import { eq } from 'drizzle-orm'
 
-// TODO: Fix setCookie error
 export const authenticateFromLink = new Elysia().use(auth).get(
   '/auth-links/authenticate',
   async ({ query, jwt, cookie: { auth }, set }) => {
@@ -41,7 +40,7 @@ export const authenticateFromLink = new Elysia().use(auth).get(
     auth.value = token
 
     await db.delete(authLinks).where(eq(authLinks.code, code))
-    set.redirect = redirect
+    set.headers.Location = redirect
   },
   {
     query: t.Object({
