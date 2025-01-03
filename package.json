@@ -16,6 +16,7 @@
     "@faker-js/faker": "^9.3.0",
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/bun": "latest",
+    "@types/nodemailer": "^6.4.17",
     "@types/pg": "^8.11.10",
     "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
@@ -32,6 +33,7 @@
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.38.3",
     "elysia": "^1.2.9",
+    "nodemailer": "^6.9.16",
     "pg": "^8.13.1",
     "postgres": "^3.4.5",
     "zod": "^3.24.1"
