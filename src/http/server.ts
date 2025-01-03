@@ -14,6 +14,17 @@ const app = new Elysia()
   .use(signOut)
   .use(getProfile)
   .use(getManegedRestaurant)
+  .onError(({ error, code, set }) => {
+    switch (code) {
+      case 'VALIDATION':
+        set.status = error.status
+        return error.toResponse()
+      default: {
+        console.log(error)
+        return new Response(null, { status: 500 })
+      }
+    }
+  })
 
 app.listen(3333, () => {
   console.log('🔥 HTTP server running!')
