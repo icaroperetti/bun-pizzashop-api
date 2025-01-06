@@ -36,6 +36,20 @@
       "when": 1736130181689,
       "tag": "0004_loud_korg",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1736130579077,
+      "tag": "0005_thin_the_anarchist",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1736130685989,
+      "tag": "0006_demonic_ultragirl",
+      "breakpoints": true
     }
   ]
 }
