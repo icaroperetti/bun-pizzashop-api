@@ -1,5 +1,5 @@
 {
-  "id": "809609b9-59ae-405a-b95b-931c22b2ee2f",
+  "id": "8919a55d-ea2b-48e9-bd4a-2d0619207ded",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -418,6 +418,17 @@
     }
   },
   "enums": {
+    "public.order_status": {
+      "name": "order_status",
+      "schema": "public",
+      "values": [
+        "pending",
+        "processing",
+        "delivering",
+        "delivered",
+        "cancelled"
+      ]
+    },
     "public.user_role": {
       "name": "user_role",
       "schema": "public",

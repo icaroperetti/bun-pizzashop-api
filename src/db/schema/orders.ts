@@ -3,12 +3,12 @@ import { createId } from '@paralleldrive/cuid2'
 import { orderItems, restaurants, users } from '.'
 import { relations } from 'drizzle-orm'
 
-const orderStatusEnum = pgEnum('order_status', [
+export const orderStatusEnum = pgEnum('order_status', [
   'pending',
   'processing',
   'delivering',
   'delivered',
-  'canceled',
+  'cancelled',
 ])
 
 export const orders = pgTable('orders', {

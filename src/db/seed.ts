@@ -149,7 +149,7 @@ for (let i = 0; i < 200; i++) {
       'processing',
       'delivering',
       'delivered',
-      'canceled',
+      'cancelled',
     ]),
     createdAt: faker.date.recent({ days: 40 }),
   })
