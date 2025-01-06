@@ -15,6 +15,27 @@
       "when": 1735772110204,
       "tag": "0001_brave_firebird",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736088134646,
+      "tag": "0002_wild_maddog",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1736088230764,
+      "tag": "0003_amused_electro",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1736130181689,
+      "tag": "0004_loud_korg",
+      "breakpoints": true
     }
   ]
 }
