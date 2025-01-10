@@ -83,16 +83,14 @@ console.log(chalk.yellowBright('✔️ Created restaurant!'))
 function generateProduct() {
   return {
     name: faker.commerce.productName(),
-    description: faker.commerce.productDescription(),
     restaurantId: restaurant.id,
+    description: faker.lorem.paragraph(),
     priceInCents: Number(faker.commerce.price({ min: 190, max: 490, dec: 0 })),
   }
 }
-
 /**
  * Create products
  */
-
 const availableProducts = await db
   .insert(products)
   .values([
@@ -149,7 +147,7 @@ for (let i = 0; i < 200; i++) {
       'processing',
       'delivering',
       'delivered',
-      'cancelled',
+      'canceled',
     ]),
     createdAt: faker.date.recent({ days: 40 }),
   })
@@ -159,7 +157,5 @@ await db.insert(orders).values(ordersToInsert)
 await db.insert(orderItems).values(orderItemsToInsert)
 
 console.log(chalk.yellowBright('✔️ Created orders!'))
-
-console.log(chalk.greenBright('Database seeded successfully!'))
 
 process.exit(0)

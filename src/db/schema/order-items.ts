@@ -13,7 +13,7 @@ export const orderItems = pgTable('order_items', {
       onDelete: 'cascade',
     }),
   productId: text('product_id').references(() => products.id, {
-    onDelete: 'set default',
+    onDelete: 'set null',
   }),
   priceInCents: integer('price_in_cents').notNull(),
   quantity: integer('quantity').notNull(),

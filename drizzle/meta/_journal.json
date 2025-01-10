@@ -8,6 +8,20 @@
       "when": 1736134145442,
       "tag": "0000_left_changeling",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1736474797397,
+      "tag": "0001_complete_arclight",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736476734131,
+      "tag": "0002_real_scourge",
+      "breakpoints": true
     }
   ]
 }
