@@ -24,6 +24,7 @@ export const orders = pgTable('orders', {
       onDelete: 'cascade',
     })
     .notNull(),
+  status: orderStatusEnum('status').default('pending').notNull(),
   totalInCents: integer('total_in_cents').notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
 })

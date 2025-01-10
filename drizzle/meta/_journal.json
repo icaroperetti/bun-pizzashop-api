@@ -22,6 +22,13 @@
       "when": 1736476734131,
       "tag": "0002_real_scourge",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1736478554319,
+      "tag": "0003_sudden_fixer",
+      "breakpoints": true
     }
   ]
 }
