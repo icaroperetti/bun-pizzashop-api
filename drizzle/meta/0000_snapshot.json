@@ -1,5 +1,5 @@
 {
-  "id": "8919a55d-ea2b-48e9-bd4a-2d0619207ded",
+  "id": "91566773-fd10-4fa3-b602-ce152d226223",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -124,7 +124,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "set default",
+          "onDelete": "set null",
           "onUpdate": "no action"
         }
       },
@@ -426,7 +426,7 @@
         "processing",
         "delivering",
         "delivered",
-        "cancelled"
+        "canceled"
       ]
     },
     "public.user_role": {

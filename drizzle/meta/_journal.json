@@ -5,29 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1736134145442,
-      "tag": "0000_left_changeling",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1736474797397,
-      "tag": "0001_complete_arclight",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1736476734131,
-      "tag": "0002_real_scourge",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1736478554319,
-      "tag": "0003_sudden_fixer",
+      "when": 1736693768977,
+      "tag": "0000_nostalgic_gideon",
       "breakpoints": true
     }
   ]

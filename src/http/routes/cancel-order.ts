@@ -32,7 +32,7 @@ export const cancelOrder = new Elysia().use(auth).patch(
     await db
       .update(orders)
       .set({
-        status: 'cancelled',
+        status: 'canceled',
       })
       .where(eq(orders.id, orderId))
   },

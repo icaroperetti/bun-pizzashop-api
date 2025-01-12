@@ -31,6 +31,8 @@ const app = new Elysia()
       case 'VALIDATION':
         set.status = error.status
         return error.toResponse()
+      case 'NOT_FOUND':
+        return new Response(null, { status: 404 })
       default: {
         console.log(error)
         return new Response(null, { status: 500 })
