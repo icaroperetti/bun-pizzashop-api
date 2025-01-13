@@ -14,8 +14,11 @@ export const dispatchOrder = new Elysia().use(auth).patch(
       throw new UnauthorizedError()
     }
     const order = await db.query.orders.findFirst({
-      where: (fields, { eq }) => {
-        return eq(fields.id, orderId)
+      where: (fields, { eq, and }) => {
+        return and(
+          eq(fields.restaurantId, restauranteId),
+          eq(fields.id, orderId),
+        )
       },
     })
 
